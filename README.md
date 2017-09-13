@@ -117,7 +117,7 @@ Variable explanations:
 ```javascript
 
 /* Must point to the API setup in your config.json file. */
-var api = "http://poolhost:8117";
+var api = "http://poolhost.com:8117";
 
 /* Pool server host to instruct your miners to point to.  */
 var poolHost = "poolhost.com";
@@ -126,10 +126,10 @@ var poolHost = "poolhost.com";
 var email = "support@domain.com";
 
 /* Used for front-end block links. */
-var blockchainExplorer = "http://chainradar.com/{symbol}/block/{id}";
+var blockchainExplorer = "http://blocks.unotecoin.com/block/{id}";
 
 /* Used by front-end transaction links. */
-var transactionExplorer = "http://chainradar.com/{symbol}/transaction/{id}";
+var transactionExplorer = "http://blocks.unotecoin.com/transaction/{id}";
 ```
 
 #### 5) Customize your website
