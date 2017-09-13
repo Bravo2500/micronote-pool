@@ -58,7 +58,14 @@ npm update
 #### 2) Configuration
 
 
-Pool is preconfigured for XUNC mining. You only need to change the commented line:
+Pool is preconfigured for XUNC mining. You only need to launch your wallet listening on port 8802:
+
+```bash
+./simplewallet --rpc-bind-port 8082 --wallet-file YOUR_WALLET_FILE.wallet --password WALLET_PASSWORD
+```
+
+and change the commented line at config.json:
+
 ```javascript
     "poolServer": {
         "enabled": true,
