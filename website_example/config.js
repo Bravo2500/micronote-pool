@@ -1,4 +1,4 @@
-var api = "http://127.0.0.1:8117";
+var api = "http://yourhost.com:8117";
 
 var coinUnits = 1000000000000;
 
