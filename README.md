@@ -117,10 +117,10 @@ Variable explanations:
 ```javascript
 
 /* Must point to the API setup in your config.json file. */
-var api = "http://poolhost.com:8117";
+var api = "http://yourhost.com:8117";
 
 /* Pool server host to instruct your miners to point to.  */
-var poolHost = "poolhost.com";
+var poolHost = "yourhost.com";
 
 /* Contact email address. */
 var email = "support@domain.com";
