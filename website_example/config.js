@@ -6,6 +6,6 @@ var poolHost = "yourhost.com";
 
 var email = "support@domain.com";
 
-var blockchainExplorer = "http://blocks.unotecoin.com/block/";
+var blockchainExplorer = "http://blocks.unotecoin.com/block/{id}";
 
-var transactionExplorer = "http://blocks.unotecoin.com/transaction/";
+var transactionExplorer = "http://blocks.unotecoin.com/transaction/{id}";
