@@ -58,19 +58,16 @@ npm update
 #### 2) Configuration
 
 
-Explanation for each field:
+Pool is preconfigured for XUNC mining. You only need to change the commented line:
 ```javascript
-/* Module that sends payments to miners according to their submitted shares. */
-"payments": {
-    "enabled": true,
-    "interval": 600, //how often to run in seconds
-    "maxAddresses": 50, //split up payments if sending to more than this many addresses
-    "mixin": 3, //number of transactions yours is indistinguishable from
-    "transferFee": 5000000000, //fee to pay for each transaction
-    "minPayment": 100000000000, //miner balance required before sending payment
-    "maxTransactionAmount": 0, //split transactions by this amount(to prevent "too big transaction" error)
-    "denomination": 100000000000 //truncate to this precision and store remainder
-},
+    "poolServer": {
+        "enabled": true,
+        "clusterForks": "auto",
+        "poolAddress": "", //YOUR_XUNC_ADDRESS here
+        "blockRefreshInterval": 1000,
+        "minerTimeout": 900,
+        "ports": [
+
 ```
 
 #### 3) Start the pool
